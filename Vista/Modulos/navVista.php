@@ -12,13 +12,46 @@
             <?php
             if (isset($_SESSION)) {
                 //include '../Modelo/consultasUsuarioModel.php';
-                session_start();
-                echo '<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+           
+                 echo '<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
               aria-expanded="false" aria-label="Toggle navigation">
-              <i class="fa-solid fa-house-flood-water-circle-arrow-right"></i>';
-                echo $_SESSION['administrador']->getId() . '</button>';
-                session_write_close();
+              <i class="fa-solid fa-house-flood-water-circle-arrow-right"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+               <ul class="navbar-nav col-md-9 zoom">
+                <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="#">Almacenamiento</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Ayuda
+                    </a>
+                    <ul class="dropdown-menu zoom" aria-labelledby="navbarDropdownMenuLink">
+                     <li><a class="dropdown-item" href="../public/guia.php">Guía</a></li>
+                     <li><a class="dropdown-item" href="#">Suministros</a></li>
+                     <li><a class="dropdown-item" href="#">Blog</a></li>
+                     <li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Acerca de
+                    </a>
+                    <ul class="dropdown-menu zoom" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item zoom" href="#">Contáctenos</a></li>
+                        <li><a class="dropdown-item" href="#">Privacidad</a></li>
+                        <li><a class="dropdown-item" href="#">Trabaja con nosotros</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+                        <li><a class="dropdown-item" href="../public/terminos.php">Terminos y condiciones</a></li>
+                    </ul>
+                </li>
+                </ul>
+                <ul class="navbar-nav col-md-8 zoom">
+                <li class="nav-item">';
+                   echo '<i class="fa fa-user"></i>  ' . $_SESSION['administrador']->getId() . ' </li>
+               </ul>
+              </div>';
             } else {
                 echo '<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
@@ -35,7 +68,7 @@
                       Ayuda
                     </a>
                     <ul class="dropdown-menu zoom" aria-labelledby="navbarDropdownMenuLink">
-                     <li><a class="dropdown-item" href="./public/guia.php">Guía</a></li>
+                     <li><a class="dropdown-item" href="../public/guia.php">Guía</a></li>
                      <li><a class="dropdown-item" href="#">Suministros</a></li>
                      <li><a class="dropdown-item" href="#">Blog</a></li>
                      <li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
@@ -50,7 +83,7 @@
                         <li><a class="dropdown-item" href="#">Privacidad</a></li>
                         <li><a class="dropdown-item" href="#">Trabaja con nosotros</a></li>
                         <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
-                        <li><a class="dropdown-item" href="./public/terminos.php">Terminos y condiciones</a></li>
+                        <li><a class="dropdown-item" href="../public/terminos.php">Terminos y condiciones</a></li>
                     </ul>
                 </li>
                 </ul>

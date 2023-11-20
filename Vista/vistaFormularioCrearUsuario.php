@@ -1,12 +1,12 @@
 <?php
-//require '../Controlador/protectorRutasNavegador.php';
+require '../Controlador/protectorRutasNavegador.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Inicio</title>
+        <title>Formulario usuario</title>
         <!-- iconos -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
         <!-- Fuentes -->
@@ -25,14 +25,15 @@
         ?>
         <h5 class="card-title text-center mb-5 fw-light fs-5">Creamos una nueva franquicia</h5>
 
-        <form action="" method="post" class="needs-validation d-flex justify-content-around" novalidate>
+        <form action="../Controlador/crearFranquiciado.php" method="post" class="needs-validation d-flex justify-content-around" novalidate>
             <div class="border-0 shadow rounded-3 d-flex flex-column ">
                 <div class="p-4 p-sm-5 flex-grow-1 d-flex flex-row">
                     <fieldset class="">
                         <legend>Nombre</legend>
                         <div class="form-floating mb-3">
-                            <label for="">Dni/Cif</label>
-                            <input type="text" class="form-control" placeholder="Dni/Cif" name="id" id="id" required>
+                            <input type="text" class="form-control" name="id" id="id"
+                                   placeholder="Nombre" required="required">
+                            <label for="floatingPassword">Dni/Cif</label>
                         </div>
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" name="nombre" id="nombre"
@@ -145,7 +146,7 @@
                             <label for="floatingPassword">Trastero pequeño</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" name="xl" id="xl"
+                            <input type="text" class="form-control" name="tq" id="tq"
                                    placeholder="Taquillas" required="required">
                             <label for="floatingPassword">Taquillas</label>
                         </div>
@@ -167,17 +168,17 @@
                     <fieldset>
                         <legend>Consumibles</legend>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" name="c" id="c"
+                            <input type="text" class="form-control" name="cinta" id="cinta"
                                    placeholder="Cinta embalaje" required="required">
                             <label for="floatingPassword">Cinta embalaje</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" name="xl" id="xl"
+                            <input type="text" class="form-control" name="manta" id="manta"
                                    placeholder="Manta protectora" required="required">
                             <label for="floatingPassword">Manta protectora</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" name="plastico" id="xl"
+                            <input type="text" class="form-control" name="plastico" id="plastico"
                                    placeholder="Plastico protector" required="required">
                             <label for="floatingPassword">Plastico protector</label>
                         </div>
@@ -208,20 +209,13 @@
                 </div>
             </div>
         </form>
-        <!-- Custom js-->
+        <!-- Custom js
+        <script src="../Public/Js/validarRegistro.js"></script>-->
+        <!--Bootstrap 5-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- <script src="../Bootstrap/js/bootstrap.min.js"></script> -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-        <!-- Custom js-->
-        <script src="../Public/Js/validarRegistro.js"></script>
-        <!--Bootstrap 5
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="../Bootstrap/js/bootstrap.min.js"></script>  -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <?php
         require './Modulos/footerVista.php';
         ?>
     </body>
 </html>
-<!-- Custom -->

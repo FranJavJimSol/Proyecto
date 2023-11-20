@@ -1,6 +1,8 @@
 <?php
 
-class usuarioModel {
+require 'conexion.php';
+
+class usuarioModel extends conexion {
 
     protected $id; // Dni o Cif
     protected $nombre;
@@ -166,12 +168,101 @@ class usuarioModel {
         $this->rol = $rol;
     }
 
-    public function conectarInicio() {
-        return mysqli_connect(
-                $this->server = 'localhost',
-                $this->user = 'super',
-                $this->password = '123456',
-                $this->database = 'Inicio'
-        );
+    public function usuarioExiste($u) {
+        $id = $u->getId();
+        $link = parent::conectarInicio();
+        if (!($sentencia = $link->prepare("SELECT * FROM inicio WHERE ini_id = ?")
+                )) {// Mandar a pagina de error "Fallo conexion"
+            echo "Falló la preparación :(" . $link->errno . ")" . $link->error;
+        }
+        if (!($sentencia->bind_param('s', $id))) {// Mandar a pagina de error "Fallo conexion"
+            echo "Falló la vinculación de parametros :(" . $sentencia->errno . ")" . $sentencia->error;
+        }
+        if (!$sentencia->execute()) {// Mandar a pagina de error "Fallo conexion"
+            echo "Fallo la ejecución:(" . $sentencia->errno . ")" . $sentencia->errno;
+        }
+        $resultado = $sentencia->get_result();
+
+        if ($resultado->num_rows < 1) {
+            return false;
+            $resultado->close();
+        } else {
+            return true;
+            $resultado->close();
+        }
+    }
+
+    public function insertarUsuarioFranquiciado($u) {
+        $link = $this->conectarInicio();
+        if (!($sentencia = $link->prepare("INSERT INTO inicio (ini_id,ini_nombre,ini_apellido1,"
+                . "ini_apellido2,ini_email,ini_password,ini_telefono1,ini_telefono2,ini_tipoVia,"
+                . "ini_nombreVia,ini_numero,ini_escalera,ini_piso,ini_letra,ini_cp,ini_rol) "
+                . "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)")
+                )) {// Mandar a pagina de error "Fallo conexion"
+            echo "Falló la preparación :(" . $link->errno . ")" . $link->error;
+        }
+        if (!($sentencia->bind_param('ssssssiissisisis', $u->getId(), $u->getApellido1(), $u->getApellido2(),
+                        $u->getEmail(), $u->getTelefono1(), $u->getTelefono2(), $u->getTipoVia(), $u->getNombreVia(),
+                        $u->getNumero(), $u->getEscalera(), $u->getPiso(), $u->getLetra(), $u->getCp(), $u->getRol()))) {
+            echo "Falló la vinculación de parametros :(" . $sentencia->errno . ")" . $sentencia->error;
+        }
+        if (!$sentencia->execute()) {// Mandar a pagina de error "Fallo conexion"
+            echo "Fallo la ejecución:(" . $sentencia->errno . ")" . $sentencia->errno;
+        }
+        $resultado = $sentencia->get_result();
+        $resultado->close();
+    }
+
+    // Administrador del sistema validación.
+    public function CreaUsuario($user) {
+
+        $u = strtolower(str_replace(' ', '', $user->getNombre()));
+        $p = $user->getPassword();
+        $link = parent::conectarInicio(); // Conexión llamando al método del padre del que hereda
+        if (!($sentencia = $link->prepare("SELECT * FROM inicio WHERE ini_nombre = ? AND ini_password = ?")
+                )) {// Mandar a pagina de error "Fallo conexion"
+            echo "Falló la preparación :(" . $link->errno . ")" . $link->error;
+        }
+        if (!($sentencia->bind_param('ss', $u, $p))) {// Mandar a pagina de error "Fallo conexion"
+            echo "Falló la vinculación de parametros :(" . $sentencia->errno . ")" . $sentencia->error;
+        }
+        if (!$sentencia->execute()) {// Mandar a pagina de error "Fallo conexion"
+            echo "Fallo la ejecución:(" . $sentencia->errno . ")" . $sentencia->errno;
+        }
+        $resultado = $sentencia->get_result();
+
+        if ($resultado->num_rows < 1) {
+            // Mandar a pagina de error "usuario no registrado"
+            echo 'Usuario no registrado';
+            return false;
+            $resultado->close();
+        } else {
+            while ($fila = $resultado->fetch_assoc()) {
+                $user->setId($fila["ini_id"]);
+                $user->setApellido1($fila["ini_apellido1"]);
+                $user->setApellido2($fila["ini_apellido2"]);
+                $user->setEmail($fila["ini_email"]);
+                $user->setTelefono1($fila["ini_telefono1"]);
+                $user->setTelefono2($fila["ini_telefono2"]);
+                $user->setTipoVia($fila["ini_tipoVia"]);
+                $user->setNombreVia($fila["ini_nombreVia"]);
+                $user->setNumero($fila["ini_numero"]);
+                $user->setEscalera($fila["ini_escalera"]);
+                $user->setPiso($fila["ini_piso"]);
+                $user->setLetra($fila["ini_letra"]);
+                $user->setCp($fila["ini_cp"]);
+                $user->setRol($fila["ini_rol"]);
+            }
+            $resultado->close();
+            return $user;
+        }
+    }
+
+    public function eliminarUsuarioFranquicia() {
+        
+    }
+
+    public function actualizarUsuarioFranquicia() {
+        
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-require '../Modelo/consultasUsuarioModel.php';
+require '../Modelo/usuarioModel.php';
 require '../Modelo/verificaInputsModel.php';
 
 if (isset($_POST['login'])) {
@@ -13,7 +13,7 @@ if (isset($_POST['login'])) {
 
     if ($n == true && $p == true) {
 
-        $vUsuario = new consultasUsuarioModel();
+        $vUsuario = new usuarioModel();
         $vUsuario->setNombre($nombre);
         $vUsuario->setPassword($password);
 
@@ -22,10 +22,9 @@ if (isset($_POST['login'])) {
         
         // Que usuario crea session.
         if ($u->getRol() === "1") {
-            //session_start();
+            session_start();
             $_SESSION['administrador'] = $u; // Sesion creada // TO DO Identificador
-            require '../Vista/vistaFormularioCrearUsuario.php';
-            session_write_close();
+            header('Location: ../Vista/vistaFormularioCrearUsuario.php');
                        
         } else if ($vUsuario->getRol() === "2") {
             session_start();

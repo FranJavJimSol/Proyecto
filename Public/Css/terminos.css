@@ -1,0 +1,58 @@
+.aside {
+    background-color: aliceblue;
+}
+
+.Encabezado{
+    position: sticky;
+    top: 150px;
+    background-color: white;
+}
+
+/*----------@media----------*/
+/*Dispositivos X-Small (teléfonos verticales, menos de 576px)
+ No hay media queries para `xs` ya que este es el valor predeterminado en Bootstrap*/
+
+@media (min-width: 576px) { }
+
+/* Ipad pro 11 inch vertical (834 x 1196)*/
+/* Ipad mini vertical (768 x 1024)*/
+@media (min-width: 768px) {
+                           
+    .terminos{
+        margin:auto;
+    }
+}
+/* Ipad pro 12.9 inch vertical (1024 x 1366)*/
+/* Ipad pro 11 inch horizontal (834 x 1196)*/
+/* Ipad mini horizontal (768 x 1024)*/
+@media (min-width: 992px) { 
+    .aside {                
+        left: 2vw;          
+        top: 18vw;/* pegado a la barra de navegación +5 */
+    }
+    .carousel{
+        left: 1vw;
+        top: 90vw;
+    }
+    .terminos{
+        margin-left: 33rem;
+    }
+}
+/* Ipad pro 12.9 inch horizontal (1366 x 1024)*/
+/* Ipad pro 11 inch horizontal (834 x 1196)*/
+@media (min-width: 1194px) {
+    .aside {                
+        left: 2vw;
+        top: 14.5vw;/* pegado a la barra de navegación +5 */
+    }
+    .terminos{
+        margin-left: 36rem;
+    }
+}
+@media (min-width: 1400px) {
+    .aside {
+        left: 5vw;
+        top: 8.5vw;
+    }
+}
+/*----------@media----------*/
