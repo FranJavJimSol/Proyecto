@@ -22,6 +22,7 @@ class usuarioModel extends conexion {
     protected $rol;
 
     public function __construct() {
+
         $this->id;
         $this->nombre;
         $this->apellido1;
@@ -184,11 +185,13 @@ class usuarioModel extends conexion {
         $resultado = $sentencia->get_result();
 
         if ($resultado->num_rows < 1) {
+            $resultado->close();
+            $link->close();
             return false;
-            $resultado->close();
         } else {
-            return true;
             $resultado->close();
+            $link->close();
+            return true;
         }
     }
 
@@ -211,6 +214,7 @@ class usuarioModel extends conexion {
         }
         $resultado = $sentencia->get_result();
         $resultado->close();
+        $link->close();
     }
 
     // Administrador del sistema validación.
@@ -234,9 +238,10 @@ class usuarioModel extends conexion {
         if ($resultado->num_rows < 1) {
             // Mandar a pagina de error "usuario no registrado"
             echo 'Usuario no registrado';
-            return false;
             $resultado->close();
-        } else {
+            $link->close();
+            return false;
+                    } else {
             while ($fila = $resultado->fetch_assoc()) {
                 $user->setId($fila["ini_id"]);
                 $user->setApellido1($fila["ini_apellido1"]);
@@ -254,6 +259,7 @@ class usuarioModel extends conexion {
                 $user->setRol($fila["ini_rol"]);
             }
             $resultado->close();
+            $link->close();
             return $user;
         }
     }

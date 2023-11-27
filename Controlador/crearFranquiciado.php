@@ -1,6 +1,7 @@
 <?php
 
 require '../Modelo/usuarioModel.php';
+require '../Modelo/estanteModel.php';
 
 if (isset($_POST['creaf'])) {
 // Declaración de variables y objetos;
@@ -24,9 +25,22 @@ if (isset($_POST['creaf'])) {
 
     // Si el usuario en un determinado rol existe.
     if ($usuario->usuarioExiste($usuario) == false && $usuario->getRol() == "2") {
+
+        $estante = new estanteModel();
+        // Llamada para saber la ultima id de la tabla estantes.
+        $Uid = $estante->ultimaId();
+
+        for ($i = 0; $i < $_POST['estante0']; $i++) {
+            $Uid++; // Autoincremental tabla estante
+            $e = new estanteModel(($Uid), $usuario->setId($_POST['id']), 'xl');
+            var_dump($e);
+        }
+
+
+
         session_start();
-        $_SESSION['franquiciado'] = $usuario; // Sesion creada // TO DO Identificador
-        header('Location: ../Vista/vistaTablas.php');
+        $_SESSION['franquiciado'] = $usuario; // Sesion creada con datos franquiciado
+        header('Location: ../Vista/vistaConfirmarUsuario.php'); // A vista de confirmar
         // inserto en el sitio
         /* for ($i = 0; $i < $_POST['xl']; $i++) {
           $usuario->insertarElementosAlquiler($_POST['id'], 'xl'); */
@@ -66,8 +80,4 @@ if (isset($_POST['creaf'])) {
       // Insercion de franquiciado
       $consulta->CreaUsuario($usuario);
       // Insercion de elementos de alquiler */
-
-
-
- 
 }

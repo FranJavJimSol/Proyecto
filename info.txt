@@ -5,3 +5,4 @@ https://es.stackoverflow.com/questions/492304/comprobar-constantemente-si-existe
 https://mdbootstrap.com/learn/mdb-foundations/bootstrap/forms/
 https://webdesign.tutsplus.com/es/how-to-create-different-css-hover-effects-from-scratch--cms-34222t
 https://www.miguelmanchego.com/2015/crear-efecto-de-zoom-al-hover-de-una-imagen-con-css/
+https://codea.app/blog/centrar-div-boostrap

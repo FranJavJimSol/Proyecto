@@ -22,9 +22,10 @@ if (isset($_POST['login'])) {
         
         // Que usuario crea session.
         if ($u->getRol() === "1") {
+        // Session de usuario activo    
             session_start();
             $_SESSION['administrador'] = $u; // Sesion creada // TO DO Identificador
-            header('Location: ../Vista/vistaFormularioCrearUsuario.php');
+            header('Location: ../Vista/vistaOpcionesAdministrador.php');
                        
         } else if ($vUsuario->getRol() === "2") {
             session_start();
