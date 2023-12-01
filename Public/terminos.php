@@ -6,157 +6,246 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Términos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Terminos</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
         <script src="https://kit.fontawesome.com/18aac5a306.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link href="./Css/custom.css" rel="stylesheet" type="text/css"  /> 
+        <link href="./Css/custom.css" rel="stylesheet"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
     </head>
     <body>
         <div class="contenedor">
-            <?php
-            include '../Vista/Modulos/navVista.php';
-            ?>
-            <div class="row">
-                <!-- Desaparece el buscador de secciones a en LG -->
-                <aside class="col-lg-4 border aside d-none d-lg-block position-fixed">
-                    <ul>
-                        <li class="list-group-item">
-                            <a href="terminos/#intro" class="link-secondary text-decoration-none">
-                                Intro.
-                            </a>
-                        </li>
-                        <li class="list-group-item ">
-                            <a href="terminos/#1" class="link-secondary text-decoration-none">
-                                1. Promociones y Ofertas.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#2" class="link-secondary text-decoration-none">
-                                2. Contenido, propiedad, licencia limitada y derechos de otros.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#3" class="link-secondary text-decoration-none">
-                                3. Enlaces.
-                            </a>
-                        </li>
-                        <li class="list-group-item ">
-                            <a href="terminos/#4" class="link-secondary text-decoration-none">
-                                4. Política de privacidad.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#5" class="link-secondary text-decoration-none">
-                                5. Autoridad para utilizar el servicio.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#6" class="link-secondary text-decoration-none">
-                                6. Actualizaciones de los Términos.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#7" class="link-secondary text-decoration-none">
-                                7. Registro, Contraseña y Seguridad.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#8" class="link-secondary text-decoration-none">
-                                8. Comunicaciones telefónicas y acuerdo de contacto.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#9" class="link-secondary text-decoration-none">
-                                9. Quejas de derechos de autor.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#10" class="link-secondary text-decoration-none">
-                                10. Envíos al almacenamiento público.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#11" class="link-secondary text-decoration-none">
-                                11. Seguridad.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#12" class="link-secondary text-decoration-none">
-                                12. Renuncia de garantías.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#13" class="link-secondary text-decoration-none">
-                                13. Limitación de responsabilidad.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#14" class="link-secondary text-decoration-none">
-                                14. Indemnización.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#15" class="link-secondary text-decoration-none">
-                                15. Ley Aplicable.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#16" class="link-secondary text-decoration-none">
-                                16. Divisibilidad.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#17" class="link-secondary text-decoration-none">
-                                17. Terminación.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#18" class="link-secondary text-decoration-none">
-                                18. Acuerdo de arbitraje.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#19" class="link-secondary text-decoration-none">
-                                19. Varios.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#20" class="link-secondary text-decoration-none">
-                                20. Términos aplicables.
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
-                <div id="carouselExampleSlidesOnly" class="carousel slide d-none col-lg-5 d-lg-block d-xl-none position-fixed" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918484/Captura_de_pantalla_359_pipoyv.png" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918427/Captura_de_pantalla_355_assyfn.png" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918425/Captura_de_pantalla_356_k1sdbh.png" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918443/Captura_de_pantalla_357_mpnpia.png" alt="Fourth slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918480/Captura_de_pantalla_358_fzvxm8.png" alt="Fiveth slide">
-                        </div>
-                    </div>
-                    <p class=" text-center pt-2"> <b>Disfruta de nuestras instalaciónes </b></p>
+            <div class="pb-2 pb-lg-0">
+                <!-- Navigation -->
+                <div class="marginTop d-md-none"></div>
+                <div class="d-flex justify-content-center">
+                    <a href="#" class="d-none d-md-block">
+                        <img class="logoG" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918445/Captura_de_pantalla_373_e4jjcb.png" alt="cajas" />
+                    </a>
                 </div>
-                <main class="d-flex">
-                    <div>
-                        <div class="Encabezado py-2">
-                            <h1 class="text-center">Términos y condiciones </h1>
-                            <h3 class="text-center">Ultima actualizacion 31/10/2023</h3>
+                <nav class="sticky-top pb-4 ">
+                    <nav class="navbar nav navbar-expand-md rounded-3">
+                        <div class="container-fluid ">
+                            <a class="navbar-brand " href="../index.php">
+                                <img class="logoP" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918465/Captura_de_pantalla_375_p2365e.png" alt="cajas" />
+                            </a>
+                            <a href="#" class="d-block d-md-none">
+                                <img class="logoG" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918445/Captura_de_pantalla_373_e4jjcb.png" alt="cajas" />
+                            </a>                
+                            <?php
+                            if (isset($_SESSION)) {
+                                echo '<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-house-flood-water-circle-arrow-right"></i>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav col-sm-9 zoom">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./almacenamiento.php">Almacenamiento</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ayuda
+                        </a>
+                        <ul class="dropdown-menu zoom" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="./guia.php">Guía</a></li>
+                        <li><a class="dropdown-item" href="#">Suministros</a></li>
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                        <li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Acerca de
+                        </a>
+                        <ul class="dropdown-menu zoom" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item zoom" href="#">Contáctenos</a></li>
+                        <li><a class="dropdown-item" href="#">Privacidad</a></li>
+                        <li><a class="dropdown-item" href="#">Trabaja con nosotros</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+                        <li><a class="dropdown-item" href="../public/terminos.php">Terminos y condiciones</a></li>
+                        </ul>
+                        </li>
+                        </ul>
+                        <ul class="navbar-nav zoom">
+                        <li class="nav-item">';
+                                echo '<i class="fa fa-user"></i>  ' . $_SESSION['administrador']->getId() . ' </li>
+                        </ul>
+                        </div>';
+                            } else {
+                                echo '<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-house-flood-water-circle-arrow-right"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav col-sm-9 zoom">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./almacenamiento.php">Almacenamiento</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ayuda
+                        </a>
+                        <ul class="dropdown-menu zoom" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="./guia.php">Guía</a></li>
+                        <li><a class="dropdown-item" href="#">Suministros</a></li>
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                        <li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Acerca de
+                        </a>
+                        <ul class="dropdown-menu zoom" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item zoom" href="#">Contáctenos</a></li>
+                        <li><a class="dropdown-item" href="#">Privacidad</a></li>
+                        <li><a class="dropdown-item" href="#">Trabaja con nosotros</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+                        <li><a class="dropdown-item" href="../public/terminos.php">Terminos y condiciones</a></li>
+                        </ul>
+                        </li>
+                        </ul>
+                        <ul class="navbar-nav zoom">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Registrate</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Vista/vistaFormularioLogin.php">Login</a>
+                        </li>
+                        </ul>
+                        </div>';
+                            }
+                            ?>
+
                         </div>
-                        <section id="intro">
-                            <article>
+                    </nav>
+                </nav>
+                <!-- Body -->
+                <div class="row">
+                    <aside class="col-lg-4 asideGuiaL d-none d-lg-block position-fixed">
+                        <ul>
+                            <li class="list-group-item">
+                                <a href="#intro" class="link-secondary text-decoration-none">
+                                    Intro.
+                                </a>
+                            </li>
+                            <li class="list-group-item ">
+                                <a href="#1" class="link-secondary text-decoration-none">
+                                    1. Promociones y Ofertas.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#2" class="link-secondary text-decoration-none">
+                                    2. Contenido, propiedad, licencia limitada y derechos de otros.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#3" class="link-secondary text-decoration-none">
+                                    3. Enlaces.
+                                </a>
+                            </li>
+                            <li class="list-group-item ">
+                                <a href="#4" class="link-secondary text-decoration-none">
+                                    4. Política de privacidad.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#5" class="link-secondary text-decoration-none">
+                                    5. Autoridad para utilizar el servicio.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#6" class="link-secondary text-decoration-none">
+                                    6. Actualizaciones de los Términos.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="terminos/#7" class="link-secondary text-decoration-none">
+                                    7. Registro, Contraseña y Seguridad.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#8" class="link-secondary text-decoration-none">
+                                    8. Comunicaciones telefónicas y acuerdo de contacto.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#9" class="link-secondary text-decoration-none">
+                                    9. Quejas de derechos de autor.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="terminos/#10" class="link-secondary text-decoration-none">
+                                    10. Envíos al almacenamiento público.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#11" class="link-secondary text-decoration-none">
+                                    11. Seguridad.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#12" class="link-secondary text-decoration-none">
+                                    12. Renuncia de garantías.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#13" class="link-secondary text-decoration-none">
+                                    13. Limitación de responsabilidad.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#14" class="link-secondary text-decoration-none">
+                                    14. Indemnización.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#15" class="link-secondary text-decoration-none">
+                                    15. Ley Aplicable.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#16" class="link-secondary text-decoration-none">
+                                    16. Divisibilidad.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#17" class="link-secondary text-decoration-none">
+                                    17. Terminación.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#18" class="link-secondary text-decoration-none">
+                                    18. Acuerdo de arbitraje.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#19" class="link-secondary text-decoration-none">
+                                    19. Varios.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#20" class="link-secondary text-decoration-none">
+                                    20. Términos aplicables.
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <div class="col-1 col-lg-5"></div>
+                    <section class="col-10 col-lg-6 tarjetaG">
+                        <div class="col-auto text-center py-3">
+                            <h1>
+                                Términos y condiciones
+                            </h1>
+                        </div>
+                        <h3>Ultima actualizacion 31/10/2023</h3>
+                        <article id="intro">
+                            <p>
                                 POR FAVOR LEA ESTOS TÉRMINOS Y CONDICIONES CUIDADOSAMENTE. ESTABLECE LOS TÉRMINOS LEGALMENTE VINCULANTES PARA SU USO DEL SERVICIO Y OTROS SERVICIOS
                                 DISPONIBLES A TRAVÉS DEL SERVICIO. ESTOS TÉRMINOS REQUIEREN QUE USTED ARBITRE CUALQUIER DISPUTA QUE TENGA CON NOSOTROS Y USTED RENUNCIA A LA
                                 POSIBILIDAD DE PRESENTAR RECLAMOS CONTRA NOSOTROS EN UN FORMATO DE DEMANDA COLECTIVA.
@@ -179,15 +268,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 Las realidades comerciales asociadas con la operación del Servicio son tales que, sin las limitaciones que se establecen en estos Términos,
                                 como sus concesiones y renuncias de derechos, las limitaciones de nuestra responsabilidad, su indemnización hacia nosotros y el arbitraje de ciertas
                                 disputas: no pondríamos el Servicio a su disposición.Trashtero.es y sus afiliados le brindan el Servicio sujeto a los siguientes avisos, términos y condiciones.
-                            </article>
-                        </section><br>
-                        <section id="1">
+                            </p>
+                        </article><br>
+                        <article id="1">
                             <h4>
                                 <b>
                                     1. Promociones y Ofertas.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 Todas las promociones y ofertas están sujetas a cambios. Se ofrecen solo en unidades seleccionadas y están sujetos a disponibilidad.
                                 Las ofertas de precios se aplican únicamente a la tarifa de alquiler. Se aplican otras restricciones, impuestos y tarifas, incluidas tarifas
                                 administrativas. Consulte cada contrato para obtener todos los detalles.
@@ -208,15 +297,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 NO ESTAR DISPONIBLES EN TODO MOMENTO Y PUEDEN SUSTITUIRSE O DISCONTINUARSE EN CUALQUIER MOMENTO. PUBLIC STORAGE SE RESERVA EL DERECHO, EN
                                 CUALQUIER MOMENTO, DE CAMBIAR SUS PRECIOS Y MÉTODOS DE FACTURACIÓN POR LOS SERVICIOS VENDIDOS, CON EFECTO INMEDIATAMENTE AL PUBLICAR EN EL
                                 SERVICIO O MEDIANTE ENTREGA POR CORREO ELECTRÓNICO.
-                            </article>
-                        </section><br>
-                        <section id="2">
+                            </p>
+                        </article><br>
+                        <article id="2">
                             <h4>
                                 <b>
                                     2. Contenido, propiedad, licencia limitada y derechos de otros.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 <b> A. Contenido.</b> El servicio contiene una variedad de:.<br /> (i) materiales y otros elementos relacionados con Trashtero.es, sus productos,
                                 servicios y elementos similares de nuestros licenciantes y otros terceros, incluido todo el diseño, información, artículos, publicaciones,
                                 textos, datos, archivos, imágenes, scripts, diseños, gráficos, íconos de botones, instrucciones, ilustraciones, fotografías, clips de audio,
@@ -289,15 +378,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 , bajo ninguna teoría legal, por implicación, impedimento legal, costumbre de la industria o de otro modo. Todos los derechos que no se le otorgan
                                 expresamente están reservados por Trashtero.es y sus licenciantes y otros terceros. Está prohibido cualquier uso no autorizado de cualquier contenido
                                 o Servicio para cualquier propósito.<br />
-                            </article>
-                        </section><br>
-                        <section id="3">
+                            </p>
+                        </article><br>
+                        <article id="3">
                             <h4>
                                 <b>
                                     3. Enlaces.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 <b> A. Enlaces a otros sitios.</b>  Nuestro servicio puede vincularse a sitios que no se mantienen ni están relacionados con el almacenamiento público.
                                 Proporcionamos estos enlaces como un servicio a nuestros usuarios. No patrocinamos ni respaldamos estos otros sitios y no los hemos revisado.
                                 No somos responsables del contenido de ningún otro sitio. Puede acceder a esos otros sitios a través de los enlaces bajo su propia responsabilidad.
@@ -317,29 +406,29 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 (incluidas las cuestiones relacionadas con el contenido de terceros). -anuncios de partes, pagos, entrega de bienes, garantías
                                 (incluidas las garantías de productos), privacidad y seguridad de datos, y similares). Trashtero.es renuncia a toda responsabilidad en
                                 relación con esto.
-                            </article>
-                        </section><br>
-                        <section id="4">
+                            </p>
+                        </article><br>
+                        <article id="4">
                             <h4>
                                 <b>
                                     4. Política de privacidad.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 Trashtero.es respeta la privacidad de sus usuarios. Lea nuestra política de privacidad ,
                                 que explica nuestras prácticas relacionadas con la recopilación y el uso de su información a través de
                                 nuestro servicio o en conexión con él. El uso de su información por parte de Trashtero.es se rige en
                                 todo momento por nuestra política de privacidad, que se incorpora a estos términos. Usted comprende
                                 que al utilizar el servicio usted acepta la recopilación y el uso de esta información como se establece en nuestra política de privacidad.
-                            </article>
-                        </section><br>
-                        <section id="5">
+                            </p>
+                        </article><br>
+                        <article id="5">
                             <h4>
                                 <b>
                                     5. Autoridad para utilizar el servicio.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 Al utilizar nuestro servicio, usted declara que tiene al menos trece (13) años. Las personas que tengan al menos trece (13) años pero menos
                                 de dieciocho (18) años solo podrán utilizar nuestro servicio con el consentimiento legal de sus padres o tutores. En consecuencia, usted
                                 acepta que tiene la mayoría de edad (que es dieciocho (18) años de edad o más o posee el
@@ -378,15 +467,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 incluidas direcciones de correo electrónico, sin el consentimiento expreso de Trashtero.es y dichos usuarios);<br />
                                 (o) no cumple con estos términos, cualesquiera términos adicionales o términos aplicables de terceros o;<br />
                                 (p) es de otro modo objetable según lo determine el exclusivo criterio de Trashtero.es.
-                            </article>
-                        </section><br>
-                        <section id="6">
+                            </p>
+                        </article><br>
+                        <article id="6">
                             <h4>
                                 <b>
                                     6. Actualizaciones de los Términos.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 Estos términos (o, si corresponde, términos adicionales), en el formato publicado en el momento de su uso de los servicios aplicables
                                 a los que se aplica, regirán dicho uso (incluidas las transacciones realizadas durante dicho uso). A MEDIDA QUE NUESTRO SERVICIO EVOLUCIONE,
                                 LOS TÉRMINOS Y CONDICIONES BAJO LOS CUALES OFRECEMOS EL SERVICIO PODRÁN SER MODIFICADOS POSIBLEMENTE Y PODREMOS DEJAR DE OFRECER EL SERVICIO
@@ -405,15 +494,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 de proporcionarle avisos. Puede rechazar cualquier término nuevo, revisado o adicional al suspender el uso del Servicio y los servicios
                                 relacionados.
 
-                            </article>
-                        </section><br>
-                        <section id="7">
+                            </p>
+                        </article><br>
+                        <article id="7">
                             <h4>
                                 <b>
                                     7. Registro, Contraseña y Seguridad.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 Siempre que nos proporciona información sobre nuestro Servicio, acepta: <br />
                                 (a) proporcionar información verdadera, precisa, actual y completa <br />
                                 (b) mantener y actualizar rápidamente dicha información para mantenerla verdadera, precisa, actualizada y completa. Si proporciona cualquier
@@ -470,15 +559,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 seguridad. u otras vulnerabilidades.
                                 No seremos responsables de ninguna pérdida o daño (de ningún tipo y bajo cualquier teoría legal) a usted o a cualquier tercero que surja de
                                 su incapacidad o incumplimiento por cualquier motivo de cumplir con cualquiera de las obligaciones anteriores.
-                            </article>
-                        </section><br>
-                        <section id="8">
+                            </p>
+                        </article><br>
+                        <article id="8">
                             <h4>
                                 <b>
                                     8. Comunicaciones telefónicas y acuerdo de contacto.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 Usted reconoce que las llamadas telefónicas hacia o desde el almacenamiento público pueden ser monitoreadas y grabadas y acepta
                                 dicho monitoreo y grabación.
                                 Usted verifica que cualquier información de contacto proporcionada a Trashtero.es, incluidos, entre otros, su nombre, dirección
@@ -514,15 +603,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 Envíe STOP al 00000 para cancelar), usted acepta recibir nuestras comunicaciones electrónicamente. Tenga en cuenta que no estamos obligados
                                 a responder a las consultas que recibimos. Usted acepta que todos los acuerdos, avisos, divulgaciones y otras comunicaciones que le proporcionamos
                                 electrónicamente satisfacen cualquier requisito legal de que dichas comunicaciones se realicen por escrito.
-                            </article>
-                        </section><br>
-                        <section id="9">
+                            </p>
+                        </article><br>
+                        <article id="9">
                             <h4>
                                 <b>
                                     9. Quejas de derechos de autor.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 <b>A. Aviso SGAE.</b>   Trashtero.es responderá adecuadamente a los avisos de presunta infracción de derechos de autor que cumplan con la ley de
                                 derechos de autor, como se establece a continuación. Si posee derechos de autor sobre una obra (o representa a dicho propietario de
                                 derechos de autor) y cree que sus derechos de autor (o los de dicho propietario) sobre esa obra han sido infringidos por una publicación
@@ -577,15 +666,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 de autor de la SGAE ha presentado una demanda solicitando a un tribunal una orden que impida a la persona que proporcionó el material
                                 participar en actividades infractoras relacionadas. al material del Servicio. También debe tener en cuenta que podemos enviar la Contra
                                 notificación a la parte que nos envió el Aviso de infracción de derechos de autor de la SGAE.
-                            </article>
-                        </section><br>
-                        <section id="10">
+                            </p>
+                        </article><br>
+                        <article id="10">
                             <h4>
                                 <b>
                                     10. Envíos al almacenamiento público.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 <b>A. Envíos de usuarios</b><br />(i) Generalidades.   Trashtero.es puede ahora o en el futuro ofrecer a los usuarios del servicio la oportunidad de crear,
                                 construir, publicar, cargar, mostrar, publicar, distribuir, transmitir, difundir o de otro modo poner a disposición o enviar a través del Servicio
                                 (colectivamente, "enviar" ) reseñas, mensajes, textos, ilustraciones, archivos, imágenes, gráficos, fotografías, comentarios, opiniones, encuestas,
@@ -706,15 +795,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 en línea o fuera de línea. No somos responsables de la conducta o el contenido de ningún usuario. Nos reservamos el derecho, pero no tenemos
                                 la obligación, de monitorear o involucrarnos en disputas entre usted y otros usuarios. Ejerza el sentido común y su mejor criterio en sus
                                 interacciones con otros (por ejemplo, cuando envíe cualquier información personal o de otro tipo) y en todas sus otras actividades en línea.
-                            </article>
-                        </section><br>
-                        <section id="11">
+                            </p>
+                        </article><br>
+                        <article id="11">
                             <h4>
                                 <b>
                                     11. Seguridad.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 Está prohibido violar la seguridad de nuestro Servicio y puede resultar en responsabilidad penal y civil.
                                 Trashtero.es se reserva el derecho, sin limitación alguna, a: <br />(i) investigar cualquier sospecha de violación
                                 de la seguridad de su Servicio o su tecnología de la información u otros sistemas o redes, <br />(ii) investigar cualquier
@@ -731,15 +820,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 usted acepta que interrumpirá inmediatamente el uso del servicio. Ejemplos de violaciones de seguridad pueden incluir,
                                 entre otros, acceso no autorizado o uso de datos o sistemas, incluido cualquier intento de sondear, escanear o probar
                                 la vulnerabilidad del servicio o violar las medidas de seguridad o autenticación, monitoreo no autorizado de datos o tráfico,
-                            </article>
-                        </section><br>
-                        <section>
+                            </p>
+                        </article><br>
+                        <article>
                             <h4>
                                 <b>
                                     12. Renuncia de garantías.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 EL SERVICIO, INCLUYENDO TODO EL CONTENIDO INCLUIDO O PUESTO A SU DISPOSICIÓN A TRAVÉS DEL SERVICIO, SE PROPORCIONA “TAL CUAL”, “SEGÚN DISPONIBILIDAD” Y
                                 “CON TODOS SUS DEFECTOS”, A MENOS QUE SE ESPECIFIQUE LO CONTRARIO POR ESCRITO. Por lo tanto, en la máxima medida permitida por la ley, Trashtero.es, su
                                 empresa matriz y subsidiarias, y cada uno de sus respectivos empleados, funcionarios, directores, miembros, gerentes, accionistas, agentes, proveedores,
@@ -768,15 +857,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 Algunas jurisdicciones limitan o no permiten la exención de garantías implícitas o de otro tipo, por lo que las exenciones de responsabilidad anteriores
                                 pueden no aplicarse en la medida en que las leyes de dichas jurisdicciones sean aplicables.
 
-                            </article>
-                        </section><br>
-                        <section id="13">
+                            </p>
+                        </article><br>
+                        <article id="13">
                             <h4>
                                 <b>
                                     13. Limitación de responsabilidad.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 En la medida máxima permitida por la ley, las partes de almacenamiento público no serán responsables de ningún daño, pérdida o gasto directo
                                 , especial, incidental, indirecto o consecuente, incluyendo cualquier daño por pérdida de ganancias o pérdida de datos, que resulte del uso del
                                 servicio o la imposibilidad de utilizar el servicio o el rendimiento de los productos o servicios adquiridos a través del servicio o que surjan
@@ -810,15 +899,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 usted reconoce y acepta que cada disposición de estos términos de uso que establece una limitación de responsabilidad, renuncia de garantías
                                 o exclusión de daños es un elemento esencial de la base del negocio entre usted y public storage, y las limitaciones establecidas aquí se aplicará
                                 incluso si cualquier recurso limitado no cumple su propósito o propósitos esenciales.
-                            </article>
-                        </section><br>
-                        <section id="14">
+                            </p>
+                        </article><br>
+                        <article id="14">
                             <h4>
                                 <b>
                                     14. Indemnización.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 En la máxima medida permitida por la ley, usted acepta y, por la presente, defiende, indemniza y exime a las partes de
                                 almacenamiento público de cualquier reclamación, daño, pérdida, costo, investigación, responsabilidad, sentencia, multa o sanción.
                                 acuerdos, intereses y gastos (incluidos los honorarios de abogados) que directa o indirectamente surjan de o estén relacionados con
@@ -837,56 +926,54 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 Las partes de almacenamiento Público se reservan el derecho de asumir la defensa y el control exclusivos de cualquier reclamación
                                 y pérdida. No resolverá ningún reclamo ni pérdida sin, en cada caso, el consentimiento previo por escrito de un funcionario de una
                                 Parte de almacenamiento público.
-
-                            </article>
-                        </section><br>
-                        <section id="15">
+                            </p>
+                        </article><br>
+                        <article id="15">
                             <h4>
                                 <b>
                                     15. Ley Aplicable.
 
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 Este Servicio es creado y controlado por Trashtero.es en la comunidad de Murcia, España. Como tal, las leyes de España regirán estos
                                 Términos y todas las promociones y ofertas, sin dar efecto a ningún principio de conflicto de leyes. Nos reservamos el derecho de realizar
                                 cambios en nuestro Servicio y en estas exenciones de responsabilidad, términos y condiciones en cualquier momento.
-
-                            </article>
-                        </section><br>
-                        <section id="16">
+                            </p>
+                        </article><br>
+                        <article id="16">
                             <h4>
                                 <b>
                                     16. Divisibilidad.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 Si alguna disposición de estos términos se considera inválida, el resto de estos términos seguirá siendo aplicable.
                                 Si alguna disposición de estos términos se considera ilegal, nula o inaplicable, entonces esa disposición se considerará
                                 separable de estos términos y las disposiciones restantes seguirán siendo válidas y ejecutables.
-                            </article>
-                        </section><br>
-                        <section id="17">
+                            </p>
+                        </article><br>
+                        <article id="17">
                             <h4>
                                 <b>
                                     17. Terminación.
 
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 Trashtero.es se reserva el derecho, a su entera discreción, de cancelar su cuenta y restringir su uso de todo o parte del servicio por cualquier
                                 motivo o sin motivo, sin previo aviso y sin responsabilidad hacia usted o cualquier otra persona. Trashtero.es también se reserva el derecho de
                                 bloquear a los usuarios ciertas direcciones IP o números de dispositivo e impedir el acceso al servicio. Estos términos siguen siendo efectivos
                                 incluso después de que se cancele su cuenta.
-                            </article>
-                        </section><br>
-                        <section id="18">
+                            </p>
+                        </article><br>
+                        <article id="18">
                             <h4>
                                 <b>
                                     18. ACUERDO DE ARBITRAJE Y RENUNCIA A DEMANDA COLECTIVA.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 POR FAVOR LEA ESTAS DISPOSICIONES DETENIDAMENTE, YA QUE AFECTAN SUS DERECHOS<br />
                                 18.1. Aviso. Proceso Antes de presentar un reclamo contra nosotros en cualquier foro, usted acepta intentar primero resolver la disputa
                                 de manera informal notificándonos su reclamo enviando un correo electrónico a disputasolving@trashtero.es o enviando una carta al
@@ -921,15 +1008,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 una persona ni presidir de otro modo ninguna forma de procedimiento representativo o colectivo, acción consolidada o acción de fiscal general
                                 privado. Si se determina que esta disposición específica, conocida como “Renuncia a demanda colectiva”, es inaplicable, entonces la totalidad
                                 de esta Disposición de arbitraje será nula y sin efecto, excepto la Sección 18.1, que permanecerá en pleno vigor y efecto.
-                            </article>
-                        </section><br>
-                        <section id="19">
+                            </p>
+                        </article><br>
+                        <article id="19">
                             <h4>
                                 <b>
                                     19. Varios.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 Estos términos constituyen el acuerdo completo entre usted y nosotros con respecto al uso de nuestro servicio,
                                 reemplazando cualquier comunicación y propuesta anterior o contemporánea (ya sea oral, escrita o electrónica)
                                 entre usted y nosotros con respecto a dicho tema. Usted acepta que no existe ninguna relación de empresa conjunta,
@@ -951,15 +1038,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 el plural, el plural el singular y la palabra “o” se usará en el sentido inclusivo (y/o). El término "incluido" tal como se utiliza en
                                 este documento significará incluir, sin limitar la generalidad de cualquier descripción que preceda a dicho término (independientemente
                                 de si el término "incluido" va seguido de palabras como "pero no limitado a" o "sin limitación" en algunos disposiciones pero no otras).
-                            </article>
-                        </section>
-                        <section id="20">
+                            </p>
+                        </article>
+                        <article id="20">
                             <h4>
                                 <b>
                                     20. Términos aplicables a nuestra aplicación.
                                 </b>
                             </h4>
-                            <article>
+                            <p>
                                 <b> A. Aplicaciones en general.</b> Como parte del servicio que haya comprado, Trashtero.es puede poner a disposición la aplicación con una
                                 funcionalidad que permite a los usuarios comunicarse o controlar servicios y dispositivos para acceder de forma remota, pero segura,
                                 al almacenamiento e instalaciones similares, como clientes autorizados de Trashtero.es.  Trashtero.es puede recopilar información suya
@@ -999,15 +1086,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 (y se considerará que tiene) aceptó el derecho) de hacer cumplir estos términos contra usted como tercero beneficiario de los mismos.<br />(ix)
                                 Al utilizar el servicio, usted acepta cumplir con todos y cada uno de los términos de terceros que sean aplicables a cualquier plataforma,
                                 sitio web, tecnología o servicio que interactúe con el servicio.
-                            </article>
-                        </section>
-                    </div>
-                </main>
+                            </p>
+                        </article>
+                    </section>
+                </div>
+                <div class="py-5 py-md-5 py-lg-0"></div><!--Margen-->
+                <!-- Footer -->
+                <?php
+                require './footer.php';
+                ?>
             </div>
-            <?php
-            include '../Vista/Modulos/footerVista.php';
-            ?>
-        </div> 
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     </body>

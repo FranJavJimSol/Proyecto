@@ -1,4 +1,8 @@
-body{
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
 
@@ -62,6 +66,9 @@ input{
     margin-top: 10px;
     overflow: hidden;
 }
+
+/*animación boton*/
+
 
 @-webkit-keyframes ani {
     from {
@@ -172,10 +179,7 @@ input{
 /*----------Fin vistaOpcionesAdministrador-------------------*/
 
 /*----------barra de navegación----------*/
-.movNav{
-   height: 2rem;
-   width: 100%;
-}
+
 .logoP {
     height: 3rem;
     width: 4rem;
@@ -191,9 +195,9 @@ input{
     z-index: 1;
     background-color: #768886;
 }
-.margen {
+.marginTop {
     top: 0vw;
-    min-height: 10rem;
+    min-height: 1rem;
     background-color: white;
 }
 /*----------Fin barra de navegación----------*/
@@ -202,63 +206,166 @@ input{
 .contenedor{
     position: relative;
     min-height: 100vh;
-    margin:0 1rem 0 1rem
+    margin:0 1rem 0 1rem;
 }
-contenedor-wrap{
-    padding-bottom: 2.5rem;
+
+.imagenLateral{
+    width:200px;
+    height:250px;
+}
+.centradoObra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+}
+.imagenObras{
+    width:300px;
+    height:300px;
+}
+.imagenSuministro{
+    margin-top: 1rem;
+    width:300px;
+    height:250px;
+}
+.tarjetaG{
+    border:none;
+    border-radius: 5px;
+    box-shadow: 10px 10px 15px;
+    padding-bottom: 1rem;
+}
+
+.centrado{
+    padding-left: 25px;
 }
 /*----------Contenido central----------*/
-.imagenLateral{
-   width:300px; 
-   height:400px;
-}
+
 /*----------footer----------*/
-footer {
+#footer {
     position: absolute;
+    bottom:0;
     width: 100%;
-    height: 5rem;
+    height: 6rem;
     background-color: #768886;
 }
+#footerObras {
+    position: absolute;
+    bottom:-1%;
+    width: 100%;
+    height: 6rem;
+    background-color: #768886;
+}
+
 /*----------Fin footer----------*/
 
 
+/*SM BOOTSTRAP*/
+@media (min-width: 576px){
+    .logoG{
+        height: 5rem;
+        width: 20rem;
+    }
+}
 
+/*MD BOOTSTRAP*/
+@media (min-width: 769px){
+    .imagenLateral{
+        width:200px;
+        height:350px;
+    }
+    .imagenObras{
+        width:738px;
+        height:500px;
+    }
+    .imagenSuministroUltima{
+        margin-top: 1rem;
+        width:500px;
+        height:250px;
+    }
+}
 
-/*Iphone 12/13 ProMax (428px V)*/
-@media (min-width: 428px) {
-    .cardAdministrador {
-        width: 12rem;
-        height: 20rem;
-        margin:0.5rem 0 0.5rem 0.1rem  ;
-        margin-left:0.1rem;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+/*LG BOOTSTRAP*/
+@media (min-width: 992px){
+    .imagenLateral{
+        width:275px;
+        height:350px;
+    }
+
+    .tarjetaG{
+        margin-top: 7rem;
+    }
+    .resetMarginTg{
+        margin-top: 0rem;
+    }
+    #footer {
+        bottom: -2%;
+        height: 4rem;
+    }
+    .asideGuiaL{
+        border: 0.5px solid #768886;
         border-radius: 10px;
-        overflow: hidden;
-        position: relative;
-        color: #f0f0f0;
-        box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+        top:19rem;
+        left:2rem;
+    }
+    .imagenSuministroUltima{
+        margin-top: 1rem;
+        width:600px;
+        height:300px;
+    }
+}
+
+/*XXL BOOTSTRAP*/
+@media (min-width: 1400px){
+    .tarjetaG{
+        margin-top: 0rem;
+    }
+    .imagenLateral{
+        margin-left: 3rem;
+    }
+    .imagenLateralSuministros{
+        width:400px;
+        height:350px;
+        margin-left: 5rem;
+    }
+    .asideGuiaL{
+        top:12rem;
+        left:5rem;
+    }
+    .imagenLateralObras{
+        width:800px;
+        height:400px;
+    }
+    .imagenLateralAccesibilidad{
+        width:300px;
+        height:300px;
+    }
+    .centradoObra{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 65vh;
+    }
+    #footer {
+        position: absolute;
+        bottom: -2.5%;
+        width: 100%;
+        height: 4rem;
+        background-color: #768886;
+    }
+    
+    .imagenSuministroUltima{
+        margin-top: 1rem;
+        width:600px;
+        height:250px;
     }
 
 }
 
-/*Iphone 12/13 mini (812px Horizontal)*/
-@media (min-width: 812px) and (orientation: landscape){
-    .logoP {
-        height: 2rem;
-        width: 3rem;
-    }
-    .cardAdministrador {
-        width: 11rem;
-        height: 12rem;
-    }
-
-}
 
 /*Ipad 11 inch (834px Horizontal)*/
 @media (min-width: 834px) {
 
-    /*----------vistaOpcionesAdministrador-------------------*/
+    /*----------vistaOpcionesAdministrador-------------------
     .cardAdministrador {
         width: 16rem;
         height: 32rem;
@@ -268,7 +375,7 @@ footer {
         position: relative;
         color: #f0f0f0;
         box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-    }
+    }*/
     /*----------Fin vistaOpcionesAdministrador-------------------*/
     /*----------zoom nav-------------------*/
     /*  .zoom{
@@ -394,9 +501,9 @@ footer {
 @media (min-width: 992px) { /*992px*/
 
 
-    /*----------vistaOpcionesAdministrador-------------------*/
+    /*----------vistaOpcionesAdministrador-------------------
     .cardAdministrador {
-        width: 20rem;/*-4*/
+        width: 20rem;
         height: 32rem;
         border-radius: 10px;
         overflow: hidden;
@@ -404,7 +511,7 @@ footer {
         position: relative;
         color: #f0f0f0;
         box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-    }
+    }*/
     /*----------Fin vistaOpcionesAdministrador-------------------*/
 }
 

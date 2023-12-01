@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/html/Inicio/Vista/Modulos/navVista.php</file>
+            <file>file:/var/www/html/Inicio/Public/nav.php</file>
             <file>file:/var/www/html/Inicio/Public/almacenamiento.php</file>
             <file>file:/var/www/html/Inicio/Public/Css/custom.css</file>
-            <file>file:/var/www/html/Inicio/Vista/Modulos/footerVista.php</file>
+            <file>file:/var/www/html/Inicio/Public/guia.php</file>
         </group>
     </open-files>
 </project-private>

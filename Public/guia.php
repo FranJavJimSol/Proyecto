@@ -6,167 +6,177 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Términos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Guia</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
         <script src="https://kit.fontawesome.com/18aac5a306.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link href="./estilos/header.css" rel="stylesheet" type="text/css"  /> 
-        <link href="./estilos/terminos.css" rel="stylesheet" type="text/css"  /> 
-        <link href="./estilos/footer.css" rel="stylesheet" type="text/css"  /> 
+        <link href="./Css/custom.css" rel="stylesheet"> 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
     </head>
     <body>
-        <div class="container-fluid">
-            <?php
-            require('header.php');
-            ?>
-            <div class="row">
-                <!-- Desaparece el buscador de secciones a en LG -->
-                <aside class="col-lg-4 border aside d-none d-lg-block position-fixed">
-                    <ul>
-                        <li class="list-group-item">
-                            <a href="terminos/#intro" class="link-secondary text-decoration-none">
-                                Intro.
-                            </a>
-                        </li>
-                        <li class="list-group-item ">
-                            <a href="terminos/#1" class="link-secondary text-decoration-none">
-                                1. Promociones y Ofertas.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#2" class="link-secondary text-decoration-none">
-                                2. Contenido, propiedad, licencia limitada y derechos de otros.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#3" class="link-secondary text-decoration-none">
-                                3. Enlaces.
-                            </a>
-                        </li>
-                        <li class="list-group-item ">
-                            <a href="terminos/#4" class="link-secondary text-decoration-none">
-                                4. Política de privacidad.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#5" class="link-secondary text-decoration-none">
-                                5. Autoridad para utilizar el servicio.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#6" class="link-secondary text-decoration-none">
-                                6. Actualizaciones de los Términos.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#7" class="link-secondary text-decoration-none">
-                                7. Registro, Contraseña y Seguridad.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#8" class="link-secondary text-decoration-none">
-                                8. Comunicaciones telefónicas y acuerdo de contacto.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#9" class="link-secondary text-decoration-none">
-                                9. Quejas de derechos de autor.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#10" class="link-secondary text-decoration-none">
-                                10. Envíos al almacenamiento público.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#11" class="link-secondary text-decoration-none">
-                                11. Seguridad.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#12" class="link-secondary text-decoration-none">
-                                12. Renuncia de garantías.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#13" class="link-secondary text-decoration-none">
-                                13. Limitación de responsabilidad.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#14" class="link-secondary text-decoration-none">
-                                14. Indemnización.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#15" class="link-secondary text-decoration-none">
-                                15. Ley Aplicable.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#16" class="link-secondary text-decoration-none">
-                                16. Divisibilidad.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#17" class="link-secondary text-decoration-none">
-                                17. Terminación.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#18" class="link-secondary text-decoration-none">
-                                18. Acuerdo de arbitraje.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#19" class="link-secondary text-decoration-none">
-                                19. Varios.
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="terminos/#20" class="link-secondary text-decoration-none">
-                                20. Términos aplicables.
-                            </a>
-                        </li>
-                    </ul>
-                </aside>
-                <div id="carouselExampleSlidesOnly" class="carousel slide d-none col-lg-5 d-lg-block d-xl-none position-fixed" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918484/Captura_de_pantalla_359_pipoyv.png" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918427/Captura_de_pantalla_355_assyfn.png" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918425/Captura_de_pantalla_356_k1sdbh.png" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918443/Captura_de_pantalla_357_mpnpia.png" alt="Fourth slide">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918480/Captura_de_pantalla_358_fzvxm8.png" alt="Fiveth slide">
-                        </div>
-                    </div>
-                    <p class=" text-center pt-2"> <b>Disfruta de nuestras instalaciónes </b></p>
+        <div class="contenedor">
+            <div class="pb-2 pb-lg-0">
+                <!-- Navigation -->
+                <div class="marginTop d-md-none"></div>
+                <div class="d-flex justify-content-center">
+                    <a href="../index.php" class="d-none d-md-block">
+                        <img class="logoG" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918445/Captura_de_pantalla_373_e4jjcb.png" alt="cajas" />
+                    </a>
                 </div>
+                <nav class="sticky-top pb-4 ">
+                    <nav class="navbar nav navbar-expand-md rounded-3">
+                        <div class="container-fluid ">
+                            <a class="navbar-brand " href="../index.php">
+                                <img class="logoP" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918465/Captura_de_pantalla_375_p2365e.png" alt="cajas" />
+                            </a>
+                            <a href="../index.php" class="d-block d-md-none">
+                                <img class="logoG" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918445/Captura_de_pantalla_373_e4jjcb.png" alt="cajas" />
+                            </a>                
+                            <?php
+                            if (isset($_SESSION)) {
+                                echo '<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-house-flood-water-circle-arrow-right"></i>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav col-sm-9 zoom">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./almacenamiento.php">Almacenamiento</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ayuda
+                        </a>
+                        <ul class="dropdown-menu zoom" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="./guia.php">Guía</a></li>
+                        <li><a class="dropdown-item" href="#">Suministros</a></li>
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                        <li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Acerca de
+                        </a>
+                        <ul class="dropdown-menu zoom" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item zoom" href="#">Contáctenos</a></li>
+                        <li><a class="dropdown-item" href="#">Privacidad</a></li>
+                        <li><a class="dropdown-item" href="#">Trabaja con nosotros</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+                        <li><a class="dropdown-item" href="../public/terminos.php">Terminos y condiciones</a></li>
+                        </ul>
+                        </li>
+                        </ul>
+                        <ul class="navbar-nav zoom">
+                        <li class="nav-item">';
+                                echo '<i class="fa fa-user"></i>  ' . $_SESSION['administrador']->getId() . ' </li>
+                        </ul>
+                        </div>';
+                            } else {
+                                echo '<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-house-flood-water-circle-arrow-right"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav col-sm-9 zoom">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./almacenamiento.php">Almacenamiento</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ayuda
+                        </a>
+                        <ul class="dropdown-menu zoom" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="./guia.php">Guía</a></li>
+                        <li><a class="dropdown-item" href="#">Suministros</a></li>
+                        <li><a class="dropdown-item" href="#">Blog</a></li>
+                        <li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Acerca de
+                        </a>
+                        <ul class="dropdown-menu zoom" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item zoom" href="#">Contáctenos</a></li>
+                        <li><a class="dropdown-item" href="#">Privacidad</a></li>
+                        <li><a class="dropdown-item" href="#">Trabaja con nosotros</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+                        <li><a class="dropdown-item" href="../public/terminos.php">Terminos y condiciones</a></li>
+                        </ul>
+                        </li>
+                        </ul>
+                        <ul class="navbar-nav zoom">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Registrate</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Vista/vistaFormularioLogin.php">Login</a>
+                        </li>
+                        </ul>
+                        </div>';
+                            }
+                            ?>
+                        </div>
+                    </nav>
+                </nav>      
+                <!--Body-->
                 <div class="row">
-                    <div class="col-1"></div>
-                    <main class="col-10 ">
-                        <div class="col-auto text-center py-5">
+                    <aside class="col-lg-4 asideGuiaL d-none d-lg-block position-fixed">
+                        <ul>
+                            <li class="list-group-item">
+                                <a href="#intro" class="link-secondary text-decoration-none">
+                                    Intro.
+                                </a>
+                            </li>
+                            <li class="list-group-item ">
+                                <a href="#1" class="link-secondary text-decoration-none">
+                                    1. Consejos para embalar.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#2" class="link-secondary text-decoration-none">
+                                    2. Guía de mudanzas.
+                                </a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="#3" class="link-secondary text-decoration-none">
+                                    3. Cosas que hacer dos semanas antes.
+                                </a>
+                            </li>
+                            <li class="list-group-item ">
+                                <a href="#4" class="link-secondary text-decoration-none">
+                                    4. Cosas que hacer una semana antes.
+                                </a>
+                            </li>
+
+                            <li class="list-group-item">
+                                <a href="#5" class="link-secondary text-decoration-none">
+                                    5. Cosas que hacer el dia de la mudanza.
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <div class="col-1 col-lg-5"></div>
+                    <section class="col-10 col-lg-6 tarjetaG">
+                        <div class="col-auto text-center py-3">
                             <h1>
                                 Guía de mudanza y consejos para embalar
                             </h1>
                             <h3>Ultima actualizacion 31/10/2023</h3>
                         </div>
-                        <article>
+                        <article  id="intro">
                             Ya sea que se mude al otro lado del país o al final de la calle, alquilar una unidad de
                             almacenamiento antes de mudarse le brindará el espacio que necesita no solo para guardar
                             las cosas, sino también para desempacar e instalarse en su propio tiempo. Trashtero.es
                             lo ayudará a prepararse para mudarse a una unidad de almacenamiento con nuestros consejos de expertos.
-                        </article><br>
-                        <article>
+                        </article>
+                        <br>
+                        <article id="1">
                             <h4>
                                 <b>
                                     Consejos para embalar
@@ -209,7 +219,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 </li>
                             </ol>
                         </article>
-                        <article>
+                        <article id="2">
                             <h4>
                                 <b>
                                     Guía de mudanzas
@@ -246,9 +256,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                     Configure todos sus planes de viaje: quién tomará qué automóviles, aviones, trenes o taxis.
                                 </li>
                             </ul>
-                        </article>
-
-                        <article>
+                        </article >
+                        <article id="3">
                             <h6>
                                 <b>
                                     Cosas que hacer dos semanas antes:
@@ -272,8 +281,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 </li>
                             </ul>
                         </article>
-
-                        <article>
+                        <article id="4">
                             <h6>
                                 <b>
                                     Cosas que hacer una semana antes:
@@ -303,8 +311,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 </li>
                             </ul>
                         </article>
-
-                        <article>
+                        <article id="5">
                             <h6>
                                 <b>
                                     Cosas que hacer el día de la mudanza:
@@ -331,14 +338,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                                 </li>
                             </ul>
                         </article>
-                    </main>
-                    <div class="col-1"></div>
+                    </section> 
                 </div>
+                <div class="py-5 py-md-5 py-lg-2"></div><!--Margen-->
+                <!--Footer-->
+                <?php
+                require './footer.php';
+                ?>
             </div>
-            <?php
-            require('footer.php');
-            ?>
-        </div> 
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     </body>

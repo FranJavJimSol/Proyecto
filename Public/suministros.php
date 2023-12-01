@@ -1,24 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Login</title>
-        <!-- iconos -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-        <!-- Fuentes -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
+        <title>Suministros</title>
         <script src="https://kit.fontawesome.com/18aac5a306.js" crossorigin="anonymous"></script>
-        <!-- Custom -->
-        <link href="../Public/Css/custom.css" rel="stylesheet">
-        <!-- Bootstrap 5 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link href="../Public/Css/custom.css" rel="stylesheet" type="text/css"  /> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
     </head>
-    <body>
+    <body >
         <div class="contenedor">
-            <div class="pb-5">
+            <div class="pb-2 pb-lg-0">
                 <!-- Navigation -->
                 <div class="marginTop d-md-none"></div>
                 <div class="d-flex justify-content-center">
@@ -32,7 +25,7 @@
                             <a class="navbar-brand " href="../index.php">
                                 <img class="logoP" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918465/Captura_de_pantalla_375_p2365e.png" alt="cajas" />
                             </a>
-                            <a href="#" class="d-block d-md-none">
+                            <a href="../index.php" class="d-block d-md-none">
                                 <img class="logoG" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918445/Captura_de_pantalla_373_e4jjcb.png" alt="cajas" />
                             </a>                
                             <?php
@@ -121,49 +114,77 @@
                         </div>';
                             }
                             ?>
+
                         </div>
                     </nav>
-                </nav> 
-                <div class="col-12 margen position-fixed"></div>
-                <div class="d-flex justify-content-center">
-                    <div class="row">
-                        <div class="mx-auto ">
-                            <div class="cardLogin flex-row my-5 border-0 shadow rounded-3 overflow-hidden p-3 ">
-                                <div class="card-body p-4 p-sm-5 ">
-                                    <h5 class="card-title text-center mb-5 fw-light fs-5">Introduce usuario</h5>
-                                    <form action="../Controlador/usuarioController.php" method="post" class="needs-validation form-control-sm" novalidate>
-                                        <div class="form-floating mb-3">
-                                            <input type="email" class="form-control" name="nombre" id="nombre"
-                                                   placeholder="E-mail" required="required">
-                                            <label for="floatingInput">Nombre</label>
-                                        </div>
-                                        <div class="form-floating mb-3">
-                                            <input type="password" class="form-control" name="password" id="password"
-                                                   placeholder="Password" required="required">
-                                            <label for="floatingPassword">Password</label>
-                                        </div>
-                                        <div class="d-grid mb-2">
-                                            <div class="button-container-2">
-                                                <span class="mas">Entrar</span>
-                                                <button id="enviar" name="login" class="s" type="submit">
-                                                    Entrar
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+                </nav>
+                <!-- Body -->
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class=" col-10 tarjetaG">
+                        <div class="col-auto text-center py-sm-4">
+                            <h1 class="text-center">
+                                Suministros
+                            </h1>
+                            <h3 class="text-center mb-md-1">Última actualización 31/10/2023</h3>
+                        </div>
+                        <div class="row">
+                            <aside class="col-lg-4 d-none d-lg-block">
+                                <img class="imagenLateralSuministros" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1701358052/consumibles2_w7ndy3.png" alt="consumibles"/>
+                            </aside>
+                            <div class="col-lg-2"></div>
+                            <section class="col-lg-6 text-aling-start" >
+                                <p>
+                                    Mantener sus pertenencias seguras comienza con cómo están empacadas.
+                                    ¡Queremos que tus pertenencias estén tan seguras en tus cajas como en nuestras unidades! Para ayudarlo a embalar 
+                                    y almacenar sus artículos de manera segura, ofrecemos suministros de mudanza y embalaje para su compra en nuestras 
+                                    instalaciones.<br>
+                                    Ofrecemos los siguientes artículos:
+                                </p>
+                                <ul>
+                                    <li>
+                                        Candados: Ofrecemos una variedad de opciones, desde candados de latón macizo resistentes a la intemperie hasta 
+                                        candados de máxima seguridad.
+                                    </li>
+                                    <li>
+                                        Cajas: elija entre una amplia variedad de tamaños de cajas para cualquier tarea de almacenamiento.
+                                        Dispensadores de cinta y cinta adhesiva: Tenemos una amplia gama de cintas disponibles, incluida cinta de embalaje
+                                        ultragruesa, cinta de embalaje transparente y dispensadores de cinta con empuñadura de pistola.
+                                    </li>
+                                    <li>
+                                        Bolsas para colchones: ¡Mantenga los colchones limpios y secos!
+                                    </li>
+                                    <li>
+                                        Fundas para sofás y sillas y fundas anti-polvo: proteja sus muebles de los elementos del movimiento con facilidad.
+                                    </li>
+                                    <li>
+                                        Plástico de burbujas y plástico de espuma: ofrecemos envolturas protectoras como el plástico de espuma protector 
+                                        antiestático SurfaceDefense™, el plástico de burbujas AirTight™ envoltura y plástico de burbujas resistente.
+                                    </li>
+                                    <li>
+                                        Papel y envoltorio de embalaje: Hay disponibles papel de embalaje kraft, envoltorio elástico y papel de regalo 
+                                        básico para proteger sus pertenencias.
+                                    </li>
+                                    <li>
+                                        DishGuard™ y GlassGuard Kitsand, Bolsas de espuma acanalada Kangoroo™ y kit de protección para platos y vidrios: 
+                                        Ofrecemos una variedad de protectores para platos para mantener sus artículos más frágiles seguros y protegidos.
+                                    </li>
+                                </ul>
+
+                            </section>
                         </div>
                     </div>
                 </div>
+                <div class="py-5 py-md-3 py-lg-0"></div><!--Margen-->
+                <!-- Footer -->
                 <?php
-                require_once './Modulos/footerVista.php';
+                require './footer.php';
                 ?>
-                <!-- Custom js
-                <script src="../Public/Js/validarRegistro.js"></script> -->
-                <!--Bootstrap 5-->
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-                </body>
-                </html>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</body>
+</html>
 
