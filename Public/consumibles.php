@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Suministros</title>
+        <title>Consumibles</title>
         <script src="https://kit.fontawesome.com/18aac5a306.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link href="../Public/Css/custom.css" rel="stylesheet" type="text/css"  /> 
@@ -27,12 +27,12 @@
                         </div>
                         <div class="row">
                             <aside class="col-lg-4 d-none d-lg-block">
-                                <img class="imagenLateralSuministros" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1701358052/consumibles2_w7ndy3.png" alt="consumibles"/>
+                                <img class="imagenLateral mx-lg-5" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1701358052/consumibles2_w7ndy3.png" alt="consumibles"/>
                             </aside>
                             <div class="col-lg-2"></div>
                             <section class="col-lg-6 text-aling-start" >
                                 <p>
-                                    Mantener sus pertenencias seguras comienza con cómo están empacadas.
+                                    Mantener sus pertenencias seguras comienza con cómo están almacenadas.
                                     ¡Queremos que tus pertenencias estén tan seguras en tus cajas como en nuestras unidades! Para ayudarlo a embalar 
                                     y almacenar sus artículos de manera segura, ofrecemos suministros de mudanza y embalaje para su compra en nuestras 
                                     instalaciones.<br>
@@ -40,30 +40,38 @@
                                 </p>
                                 <ul>
                                     <li>
-                                        Candados: Ofrecemos una variedad de opciones, desde candados de latón macizo resistentes a la intemperie hasta 
+                                        <a class="" aria-current="page" href="consumibles2.php">Candados:</a>
+                                        Ofrecemos una variedad de opciones, desde candados de latón macizo resistentes a la intemperie hasta 
                                         candados de máxima seguridad.
                                     </li>
                                     <li>
-                                        Cajas: elija entre una amplia variedad de tamaños de cajas para cualquier tarea de almacenamiento.
+                                        <a class="" aria-current="page" href="consumibles2.php">Cajas:</a>
+                                        elija entre una amplia variedad de tamaños de cajas para cualquier tarea de almacenamiento.
                                         Dispensadores de cinta y cinta adhesiva: Tenemos una amplia gama de cintas disponibles, incluida cinta de embalaje
                                         ultragruesa, cinta de embalaje transparente y dispensadores de cinta con empuñadura de pistola.
                                     </li>
                                     <li>
-                                        Bolsas para colchones: ¡Mantenga los colchones limpios y secos!
+                                        <a class="" aria-current="page" href="consumibles2.php">Fundas para sofás y sillas y fundas anti-polvo:</a>
+                                        proteja sus muebles de los elementos del movimiento con facilidad.
                                     </li>
                                     <li>
-                                        Fundas para sofás y sillas y fundas anti-polvo: proteja sus muebles de los elementos del movimiento con facilidad.
+                                        <a class="" aria-current="page" href="consumibles2.php">Bolsas para colchones:</a>
+                                        ¡Mantenga los colchones limpios y secos!
                                     </li>
+
                                     <li>
-                                        Plástico de burbujas y plástico de espuma: ofrecemos envolturas protectoras como el plástico de espuma protector 
+                                        <a class="" aria-current="page" href="consumibles2.php">Plástico de burbujas y plástico de espuma:</a>
+                                        ofrecemos envolturas protectoras como el plástico de espuma protector 
                                         antiestático SurfaceDefense™, el plástico de burbujas AirTight™ envoltura y plástico de burbujas resistente.
                                     </li>
                                     <li>
-                                        Papel y envoltorio de embalaje: Hay disponibles papel de embalaje kraft, envoltorio elástico y papel de regalo 
-                                        básico para proteger sus pertenencias.
+                                        <a class="" aria-current="page" href="consumibles2.php">Hay disponibles papel de embalaje kraft</a>
+                                        Papel y envoltorio de embalaje: envoltorio elástico y papel de regalo básico para proteger sus pertenencias.
                                     </li>
                                     <li>
-                                        DishGuard™ y GlassGuard Kitsand, Bolsas de espuma acanalada Kangoroo™ y kit de protección para platos y vidrios: 
+                                        <a class="" aria-current="page" href="consumibles2.php">DishGuard™ ,GlassGuard Kitsand, 
+                                            Bolsas de espuma acanalada Kangoroo™ y
+                                            kit de protección para platos y vidrios.</a>
                                         Ofrecemos una variedad de protectores para platos para mantener sus artículos más frágiles seguros y protegidos.
                                     </li>
                                 </ul>
@@ -72,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="py-5 py-md-3 py-lg-0"></div><!--Margen-->
+                <div class="py-5 py-lg-4 py-xxl-4"></div><!--Margen-->
                 <!-- Footer -->
                 <?php
                 require './footer.php';
@@ -84,4 +92,5 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>
+
 

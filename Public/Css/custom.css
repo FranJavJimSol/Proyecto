@@ -113,70 +113,6 @@ input{
 /*animación boton*/
 /*----------fin formulario----------*/
 
-/*----------vistaOpcionesAdministrador-------------------*/
-.cardAdministrador {
-    width: 10.4rem;
-    height: 16rem;
-    margin:0.5rem 0 0.5rem 0.1rem  ;
-    margin-left:0.1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    color: #f0f0f0;
-    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-}
-.cardAdministrador img {
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.9;
-    transition: opacity 0.2s ease-out;
-}
-.cardAdministrador h5 {
-    position: absolute;
-    cursor: pointer;
-    inset: auto auto 10px 8px;
-    margin: 0;
-    transition: inset 0.3s 0.3s ease-out;
-    font-family: 'Lato', sans-serif;
-    font-weight: normal;
-    text-transform: uppercase;
-}
-.cardAdministrador p, .cardAdministrador a {
-    position: absolute;
-    opacity: 0;
-    max-width: 80%;
-    transition: opacity 0.3s ease-out;
-}
-.cardAdministrador p {
-    inset: auto auto 80px 30px;
-}
-.cardAdministrador a {
-    inset: auto auto 40px 30px;
-    color: inherit;
-    text-decoration: none;
-}
-.cardAdministrador:hover h2 {
-    inset: auto auto 220px 30px;
-    transition: inset 0.3s ease-out;
-}
-.cardAdministrador:hover p, .card:hover a {
-    opacity: 1;
-    transition: opacity 0.5s 0.1s ease-in;
-}
-.cardAdministrador:hover img {
-    transition: opacity 0.3s ease-in;
-    opacity: 1;
-}
-.material-symbols-outlined {
-    vertical-align: middle;
-}
-/*----------Fin vistaOpcionesAdministrador-------------------*/
 
 /*----------barra de navegación----------*/
 
@@ -208,7 +144,6 @@ input{
     min-height: 100vh;
     margin:0 1rem 0 1rem;
 }
-
 .imagenLateral{
     width:200px;
     height:250px;
@@ -232,9 +167,15 @@ input{
     border:none;
     border-radius: 5px;
     box-shadow: 10px 10px 15px;
+    transition:all .3s  ease-in-out;
     padding-bottom: 1rem;
 }
-
+.tarjetaG:hover{
+    border:2px;
+    filter: grayscale(80%);
+    box-shadow: 2px 2px 2px;
+    transition:all .3s  ease-in-out;
+}
 .centrado{
     padding-left: 25px;
 }
@@ -255,7 +196,6 @@ input{
     height: 6rem;
     background-color: #768886;
 }
-
 /*----------Fin footer----------*/
 
 
@@ -277,11 +217,7 @@ input{
         width:738px;
         height:500px;
     }
-    .imagenSuministroUltima{
-        margin-top: 1rem;
-        width:500px;
-        height:250px;
-    }
+
 }
 
 /*LG BOOTSTRAP*/
@@ -307,11 +243,6 @@ input{
         top:19rem;
         left:2rem;
     }
-    .imagenSuministroUltima{
-        margin-top: 1rem;
-        width:600px;
-        height:300px;
-    }
 }
 
 /*XXL BOOTSTRAP*/
@@ -326,6 +257,10 @@ input{
         width:400px;
         height:350px;
         margin-left: 5rem;
+    }
+    .imagenRelleno{
+        height:600px;
+        width:600px;
     }
     .asideGuiaL{
         top:12rem;
@@ -352,13 +287,6 @@ input{
         height: 4rem;
         background-color: #768886;
     }
-    
-    .imagenSuministroUltima{
-        margin-top: 1rem;
-        width:600px;
-        height:250px;
-    }
-
 }
 
 

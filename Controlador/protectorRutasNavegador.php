@@ -1,9 +1,7 @@
 <?php
 //Proteccion de ruta en navegador
 require '../Modelo/usuarioModel.php';
-session_start();
-if (!isset($_SESSION['administrador'])) {
-    session_destroy();
+if (!isset($_SESSION['administrador'])&!isset($_SESSION['cliente'])&!isset($_SESSION['usuario'])) {
     header('Location: ../index.php');
 }
 

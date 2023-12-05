@@ -1,42 +1,47 @@
 <?php
-require 'Connection.php';
 
-class Authenticate extends Connection {
-// --------------------------------------------------------------------------REGISTROS--------------------------------------------------------------------
-// Administrador del sistema
-    public function registrarAdmin($user, $pass) {
-
-        $link = parent::connect(); // Conexión llamando al método del padre del que hereda
-        $consultation = "INSERT INTO User (us_name, us_pass, us_priority) VALUES (?,?)";
-        $query = $link->prepare($consultation);
-        $query->bind_param('ss', $user, $password);
-        return $query->execute(); // Devuelve true o false.
-    }
-
-// --------------------------------------------------------------------------REGISTROS--------------------------------------------------------------------
+class Authenticate extends conexion {
 
 // -------------------------------------------------------------------------VALIDACIONES--------------------------------------------------------------------
-    /* CONTRASEÑA */
-    public function ValidPassword($pass) { /* Validación contraseña compuesta por dígitos, minúsculas y mayúsculas y símbolos La contraseña debe tener al entre 8 y 16 caracteres, 
-      al menos un dígito, al menos una minúscula, al menos una mayúscula y al menos un caracter no alfanumérico. */
-
-        $password = '/^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$/';
+   /* CAMPO NOMBRE LOGIN FORMATO */
+    public function ValidaLoginNombre($nombre) {
+        // Quitar espacios en blanco y todas a minusculas para validacion.
+        $nombreFormateado = strtolower(str_replace(' ', '', $nombre));
+        $RegNombre = '/^[a-z]*$/';
+        if (preg_match($RegNombre, $nombreFormateado)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+   
+    /* CAMPO CONTRASEÑA LOGIN FORMATO*/
+    public function ValidaLoginPassword($pass) {
+        /* Validación contraseña compuesta por dígitos, minúsculas y mayúsculas y símbolos La contraseña debe tener al entre 8 y 16 caracteres, 
+          al menos un dígito, al menos una minúscula, al menos una mayúscula y al menos un caracter no alfanumérico. */
+        // /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$     
+        /*  Regex sencilla solo 6 números */
+        $password = '/^[0-9]{6}$/';
         if (preg_match($password, $pass)) {
             return true;
         } else {
             return false;
         }
     }
-
-    public function confirmPassword($pass, $pass2) {
-        if ($pass === $pass2) {
+    
+    
+    /* CAMPO PASSWORD CONTRA PASSWORD DDBB 
+    public function ValidaPasswordDataBase($password , $passwordDB) {
+        
+        
+        if (password_verify($password, $passwordDB)) {
             return true;
         } else {
-            return false;
+            echo 'password incorrecto';
         }
-    }
-
-    /* E-MAIL */
+    }*/
+  
+    /* CAMPO E-MAIL */
     public function ValidEmail($email) {
         if (filter_var($email, FILTER_VALIDATE_EMAIL) || preg_match('/^[A-z0-9\\._-]+@[A-z0-9][A-z0-9-]*(\\.[A-z0-9_-]+)*\\.([A-z]{2,6})$/', $email)) {
             return true;
@@ -111,22 +116,4 @@ class Authenticate extends Connection {
     }
 
 // -------------------------------------------------------------------------VALIDACIONES--------------------------------------------------------------------
-// -------------------------------------------------------------------------ACCESO--------------------------------------------------------------------------
-    /* Función para saber si hay admin */
-    public function thereIsAdmin() {
-
-        $link = parent::connect(); // Conexión llamando al método del padre del que hereda
-        $value = false;
-        $consultation = 'SELECT count(*) FROM User';
-        $query = mysqli_query($link, $consultation);
-        $row = mysqli_fetch_row($query); // Solo devuelve un valor
-        if (intval($row[0]) > 0) {
-            $value = true;
-        } else {
-            $value = false;
-        }
-        return $value;
-    }
-
-// -------------------------------------------------------------------------ACCESO--------------------------------------------------------------------
 }

@@ -1,3 +1,6 @@
+<?php
+require '../Controlador/protectorRutasNavegador.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -27,30 +30,32 @@
             <div class="mx-auto ">
                 <div class="cardLogin flex-row my-5 border-0 shadow rounded-3 overflow-hidden p-3 ">
                     <div class="card-body p-4 p-sm-5 ">
-                        <h5 class="card-title text-center mb-5 fw-light fs-5">Introduce usuario</h5>
-                        <form action="../Controlador/usuarioController.php" method="post" class="needs-validation form-control-sm" novalidate>
+                        <h5 class="card-title text-center mb-5 fw-light fs-5">Cesta</h5>
+                        <form action="" method="post" class="form-control-sm" >
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" name="email" id="email"
-                                       placeholder="E-mail" required="required">
-                                <label for="floatingInput">E-mail</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control" name="password" id="password"
-                                       placeholder="Password" required="required">
-                                <label for="floatingPassword">Password</label>
+                                <?php
+                                if (isset($_POST['enviar'])) {
+                                    
+                                }
+                                ?>
                             </div>
                             <div class="d-grid mb-2">
                                 <div class="button-container-2">
-                                    <span class="mas">Entrar</span>
-                                    <button id="enviar" name="login" type="submit">
-                                        Entrar
+                                    <span class="mas">+</span>
+                                    <button id="enviar" name="nuevoUsuarioInicial" type="submit">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-grid mb-2">
+                                <div class="button-container-2">
+                                    <span class="mas">Pagar</span>
+                                    <button id="enviar" name="nuevoUsuarioInicial" type="submit">
+                                        Pagar
                                     </button>
                                 </div>
                             </div>
                         </form>
-                        <a href="./vistaCreacionInicialUsuario.php" class="link-secondary text-decoration-none">
-                            Registrate aquí
-                        </a>
                     </div>
                 </div>
             </div>
@@ -66,4 +71,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
 

@@ -14,23 +14,14 @@
     </head>
     <body>
         <div class="contenedor">
-
-            <div class="pb-2 pb-lg-0">
-
-                <!-- Navigation -->
-                <div class="marginTop d-md-none"></div>
-                <div class="d-flex justify-content-center">
-                    <a href="#" class="d-none d-md-block">
-                        <img class="logoG" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918445/Captura_de_pantalla_373_e4jjcb.png" alt="cajas" />
-                    </a>
-                </div>
-                <nav class="sticky-top pb-4 ">
+            <div class="pb-0">
+                <div class="sticky-top pb-4 ">
                     <nav class="navbar nav navbar-expand-md rounded-3">
                         <div class="container-fluid ">
                             <a class="navbar-brand " href="../index.php">
                                 <img class="logoP" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918465/Captura_de_pantalla_375_p2365e.png" alt="cajas" />
                             </a>
-                            <a href="#" class="d-block d-md-none">
+                            <a href="../index.php" class="d-block d-md-none">
                                 <img class="logoG" src="https://res.cloudinary.com/dycv4oxif/image/upload/v1698918445/Captura_de_pantalla_373_e4jjcb.png" alt="cajas" />
                             </a>                
                             <?php
@@ -44,6 +35,9 @@
                         <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./Public/almacenamiento.php">Almacenamiento</a>
                         </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Public/consumibles.php">Consumibles.php</a>
+                        </li>
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Ayuda
@@ -60,17 +54,15 @@
                         Acerca de
                         </a>
                         <ul class="dropdown-menu zoom" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item zoom" href="#">Contáctenos</a></li>
-                        <li><a class="dropdown-item" href="#">Privacidad</a></li>
-                        <li><a class="dropdown-item" href="#">Trabaja con nosotros</a></li>
-                        <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+                        <li><a class="dropdown-item" href="./Public/privacidad.php">Privacidad</a></li>
+                        <li><a class="dropdown-item" href="./Public/accesibilidad.php">Accesibilidad</a></li>
                         <li><a class="dropdown-item" href="./Public/terminos.php">Terminos y condiciones</a></li>
                         </ul>
                         </li>
                         </ul>
                         <ul class="navbar-nav zoom">
                         <li class="nav-item">';
-                                echo '<i class="fa fa-user"></i>  ' . $_SESSION['administrador']->getId() . ' </li>
+                                echo '<i class="fa fa-user"></i>  ' . $_SESSION['administrador']->getEmail() . ' </li>
                         </ul>
                         </div>';
                             } else {
@@ -84,6 +76,9 @@
                         <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./Public/almacenamiento.php">Almacenamiento</a>
                         </li>
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Public/consumibles.php">Consumibles</a>
+                        </li>
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Ayuda
@@ -100,17 +95,15 @@
                         Acerca de
                         </a>
                         <ul class="dropdown-menu zoom" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item zoom" href="#">Contáctenos</a></li>
-                        <li><a class="dropdown-item" href="#">Privacidad</a></li>
-                        <li><a class="dropdown-item" href="#">Trabaja con nosotros</a></li>
-                        <li><a class="dropdown-item" href="#">Accesibilidad</a></li>
+                        <li><a class="dropdown-item" href="./Public/privacidad.php">Privacidad</a></li>
+                        <li><a class="dropdown-item" href="./Public/accesibilidad.php">Accesibilidad</a></li>
                         <li><a class="dropdown-item" href="./Public/terminos.php">Terminos y condiciones</a></li>
                         </ul>
                         </li>
                         </ul>
                         <ul class="navbar-nav zoom">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Registrate</a>
+                        <a class="nav-link active" aria-current="page" href="./Vista/vistaCreacionInicialUsuario.php">Registrate</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./Vista/vistaFormularioLogin.php">Login</a>
@@ -121,18 +114,10 @@
                             ?>
                         </div>
                     </nav>
-                </nav> 
+                </div>  
                 <!--Body-->
-                <div>
-                    <p>
-                        <span>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </span>
-                        <span>
-                            Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
-                        </span>
-                    </p>
-                </div>
+
+                <!--Footer-->
                 <?php
                 require './Public/footer.php';
                 ?>

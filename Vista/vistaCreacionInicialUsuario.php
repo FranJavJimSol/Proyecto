@@ -27,7 +27,7 @@
             <div class="mx-auto ">
                 <div class="cardLogin flex-row my-5 border-0 shadow rounded-3 overflow-hidden p-3 ">
                     <div class="card-body p-4 p-sm-5 ">
-                        <h5 class="card-title text-center mb-5 fw-light fs-5">Introduce usuario</h5>
+                        <h5 class="card-title text-center mb-5 fw-light fs-5">Crea usuario</h5>
                         <form action="../Controlador/usuarioController.php" method="post" class="needs-validation form-control-sm" novalidate>
                             <div class="form-floating mb-3">
                                 <input type="email" class="form-control" name="email" id="email"
@@ -41,16 +41,13 @@
                             </div>
                             <div class="d-grid mb-2">
                                 <div class="button-container-2">
-                                    <span class="mas">Entrar</span>
-                                    <button id="enviar" name="login" type="submit">
-                                        Entrar
+                                    <span class="mas">Registro</span>
+                                    <button id="enviar" name="nuevoUsuarioInicial" type="submit">
+                                        Registro
                                     </button>
                                 </div>
                             </div>
                         </form>
-                        <a href="./vistaCreacionInicialUsuario.php" class="link-secondary text-decoration-none">
-                            Registrate aquí
-                        </a>
                     </div>
                 </div>
             </div>

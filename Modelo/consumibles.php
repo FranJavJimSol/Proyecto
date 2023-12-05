@@ -1,6 +1,6 @@
 <?php
 
-class consumibles {
+class consumibles extends conexion {
 
     protected $numeroFranquiciado;
     protected $precioCompra;
@@ -34,9 +34,5 @@ class consumibles {
 
     public function setPrecioVenta($precioVenta): void {
         $this->precioVenta = $precioVenta;
-    }
-    
-    public function insertarconsumibles() {
-        $link = $this->conectarInicio();
     }
 }
